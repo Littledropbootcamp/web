@@ -741,7 +741,7 @@ textarea{
   overflow: hidden;
 }
 .blog-col img{
-  width:90%;
+  width:400px;
   border-radius: 10px;
   margin-bottom: 30px;
   position: relative;
@@ -751,7 +751,7 @@ textarea{
 .layer{
   background: transparent;
   height: 70%;
-  width:60%;
+  width:200px;
   position: absolute;
   top:0;
   left:0;
@@ -779,20 +779,16 @@ opacity: 1;
   font-weight: 700;
 }
 .blog-col p{
-  width: 90%;
   padding-bottom: 20px;
 }
 /*---------------------------------------------------------Courses Page coding courses------------------------------------------------------------*/
-#course-home{
-  background-color: #033E3E;
-}
 .container-courses{
   top: 0;
   margin-bottom: 0px;
 }
 
 .container-courses nav{
-  background-color: #0A3465;;
+  background-color: #0A3465;
 }
 .coding{
   display: block;
@@ -873,14 +869,15 @@ strong{
 
 }
 #bi, #md, #wd, #ds, #da{
-  
   background-color: #eff0f3;
   /* overflow:visible;
   display: none; */
   
 }
 .bi-row{
-  padding-top: 150px;
+  margin-left: 80px;
+  margin-right: 80px;
+  padding-top: 100px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
