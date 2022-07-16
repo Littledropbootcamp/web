@@ -17,9 +17,10 @@ body {
 .container{
   height: 100vh;
   max-width: 100%;
-  background-color: #0A3465;
+  background-color: #004aad;
+  /* background-color: #0A3465; */
   /* background-color: #1d5191; */
-  background-image: url('/Images/new-bg.svg');
+  background-image: url('Images/LITTLEDROP.png');
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -31,18 +32,6 @@ body {
   border-bottom-left-radius: 250px;  
 }
 
-/* .nav-item .nav-link::after{
-  content:'';
-  width: 0%;
-  height: 2px;
-  background: #fe6601;
-  margin: auto;
-  display:block;
-transition: 0.5s;
-} */
-/* .nav-item .nav-link:hover::after{
-  width: 100%;
-} */
 .close-nav{
   display: none;
 }
@@ -53,10 +42,7 @@ transition: 0.5s;
   .nav-link:hover{
     color:#fe6601;
   }
-  /* .nav-link:hover::after{
-    width: 20%;
-    color: #fe6601;
-  } */
+ 
 .navbar-collapse{
   display: inline-block;
 }
@@ -78,7 +64,7 @@ transition: 0.5s;
 }
 .navbar{
   min-width: 100%; 
-  background-color: #0A3465;
+  background-color: #004aad;
   position: fixed;
   z-index: 9;
 }
@@ -405,8 +391,6 @@ overflow: hidden;
   font-size: 16px;
   margin-left: 20px;
   font-weight: 700;
-  
-  /* font-style: italic; */
 }
 .carousel{
   width: 100%;
@@ -423,7 +407,8 @@ overflow: hidden;
 .shift{
   box-sizing: border-box;
   /* background: #1d5191; #D4F1F4*/
-  background: #B1D4E0;
+  /* background: #c8e0e9; */
+  background: #f7f7f4;
   border-radius: 10px;
   box-shadow: 5px 5px 5px rgba(0,0,0,0.25);
   width: 100%; 
@@ -459,7 +444,7 @@ overflow: hidden;
  #footer{
   /* top: 0; */
    /* background: #281e32; */
-   background-color: #0A3465;
+   background-color: #004aad;
    /* background: #166f88; */
    color: #fff;
    height: 100%;
@@ -570,14 +555,14 @@ overflow: hidden;
  .container1{
   min-height: 80vh;
   width: 100%;
-  background-image:url('Images/e-learning.jpg');
+  background-image:url('Images/aboutpage.svg');
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   top: 0px;
   left: 0px;
   overflow: hidden;
-  padding-bottom: 50px;  
+  /* padding-bottom: 50px;   */
   margin-bottom: 0px;
 }
 .container-courses{
@@ -591,9 +576,8 @@ overflow: hidden;
   margin-right: 80px;
 }
 .about-section h1{
-  margin-top: 0;
+  margin-top: 0px;
   font-weight: 700;
-  padding-top: 50px;
 }
 .about-section p{
   text-align: center;
@@ -604,11 +588,12 @@ overflow: hidden;
 .our-aim{
   color:#1d5191;
   justify-content: space-between;
+  font-weight: 700;
+  padding-bottom: 50px;
 }
 .about-title{
   font-size: 30px;
   text-align: center;
-  padding-top: 50px;
   padding-bottom: 20px;
 }
 
@@ -636,6 +621,7 @@ overflow: hidden;
 }
 .our-aim h2{
   padding-top: 100px;
+  font-weight: 700;
 }
 
 
@@ -731,14 +717,14 @@ textarea{
   padding-top: 100px;
   margin-left: 80px;
   margin-right:80px;
-  justify-content: center;
-  width: 90%;
+  justify-content: space-between;
 }
 .blog-col{
   border-radius: 10px;
-  margin-bottom: 30px;
+  padding-bottom: 50px;
   position: relative;
   overflow: hidden;
+  width: 90%;
 }
 .blog-col img{
   width:400px;
@@ -751,7 +737,7 @@ textarea{
 .layer{
   background: transparent;
   height: 70%;
-  width:200px;
+  width:70%;
   position: absolute;
   top:0;
   left:0;
@@ -780,6 +766,7 @@ opacity: 1;
 }
 .blog-col p{
   padding-bottom: 20px;
+  padding-right: 20px;
 }
 /*---------------------------------------------------------Courses Page coding courses------------------------------------------------------------*/
 .container-courses{
@@ -951,9 +938,8 @@ form div{
   height: 400px;
   width: 100%;
 } */
-/*----------------------------------------------------form-------------------------*/
+/*----------------------------------------------------Form-------------------------*/
 .hero{
-  display: none;
   width: 100%;
   height: 100%;
   position: fixed;
@@ -965,7 +951,7 @@ form div{
   background: #fff;
   z-index: 9;
   right: 0;
-  overflow-y: hidden;
+  overflow-y: scroll;
   overflow-x: hidden;
 }
 /* .login-container{
@@ -1394,6 +1380,10 @@ form div{
 }
 
 /*----------------------------------About-----------------------------------------*/
+.container1{
+  background-image:url('Images/mobile-about.svg');
+  background-position:0vw;
+}
 .about-section {
   margin-left: 20px;
   margin-right: 20px;
@@ -1441,7 +1431,7 @@ form div{
 
 /*-------------------------Contact Page-------------------------------------------------------------------------------*/
 .container-3{
-  background-image:url('/Images/mobile-contact.jpg');
+  background-image:url('Images/mobile-contact.jpg');
 }
 .contact-section h1{
   font-size: 22px;
@@ -1469,7 +1459,8 @@ form div{
 
 /*--------------------------------Blog-------------------------------------------------------------*/
 .container-2{
-  background-image:url('/Images/blog.jpg');
+  background-image:url('Images/blog.jpg');
+  background-size: cover;
 }
 .blog-row{
   flex-direction: column;
@@ -1614,6 +1605,7 @@ form div{
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 992px) {
+
   .container{
     max-width: 100%;
     padding-right: 0px;
@@ -1671,10 +1663,6 @@ form div{
     justify-content: space-evenly;
     margin: 40px -15px -30px;
     padding-top: 0px;
-
-    /* width: 100%;
-    display: grid;
-    grid-template-columns: auto 2fr; */
     height: 60%;
     /* margin-right: 40px;
     margin-left: 40px; */
@@ -1695,6 +1683,15 @@ form div{
  #footer{
   margin-top: 50px;
  }
+
+ .blog-col img{
+  width:200px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+  height: 50%;
+}
 } 
 
 /* Large devices (laptops/desktops, 992px and up) */
