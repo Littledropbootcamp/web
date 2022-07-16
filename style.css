@@ -553,11 +553,8 @@ overflow: hidden;
  
  /*-------------------------------------About Section----------------------------------------------*/
  .container1{
-  min-height: 80vh;
+  /* min-height: 80vh; */
   width: 100%;
-  background-image:url('Images/aboutpage.svg');
-  background-repeat: no-repeat;
-  background-size: cover;
   position: relative;
   top: 0px;
   left: 0px;
@@ -565,11 +562,24 @@ overflow: hidden;
   /* padding-bottom: 50px;   */
   margin-bottom: 0px;
 }
+.about-pageimg{
+  background-image: url('Images/aboutpage.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  min-height: 80vh;
+  top: 0px;
+  bottom: 0px;
+  width: 100%;
+  z-index: 1;
+}
 .container-courses{
    background-color: #0A3465;
 }
-.about-image{
+.about-image,.about-image1{
   border-radius: 15px;
+  max-width: 500px;
+  height: 300px;
 }
 .about-section{
   margin-left: 80px;
@@ -850,13 +860,12 @@ strong{
 }
 .enroll:hover{
   border: 1px solid #1d5191;
-
 }
-#bi, #md, #wd, #ds, #da{
+#bi, #sm, #wd, #ds, #es{
   background-color: #eff0f3;
+  overflow: hidden;
   /* overflow:visible;
   display: none; */
-  
 }
 .course-page{
   margin-left: 80px;
@@ -869,6 +878,7 @@ strong{
 .course-page img{
   padding-right: 50px;
   width: 100%;
+  border-radius: 15px;
 }
 .learn-bi{
  display:flex;
@@ -908,6 +918,7 @@ strong{
 }
 .bi-requirement img{
   padding-right: 30px;
+  border-radius: 15px;
 }
 .bi-requirement p{
   font-size: 22px;
@@ -957,7 +968,7 @@ form div{
 .close-icon{
   width: 30px;
   height: 30px;
-  margin-bottom: 0px;
+  margin-bottom: 10px;
   margin-top: 10px;
   display: inline-flex;
   justify-content:flex-end;
@@ -1069,15 +1080,11 @@ form div{
 }
 
 
-/*-----------------------------------Media query----------------------------------*/
+/*-----------------------------------Media query Mobile----------------------------------*/
 @media screen and (max-width: 600px) {
   body{
     max-width: 600px;
   }
-  /* main{
-    margin-left: 20px;
-    margin-right: 20px;
-  } */
   .account{
     display: block;
   }
@@ -1214,9 +1221,11 @@ form div{
   }
   .login-container{
     /* margin-top: 40px; */
-    width: 340px;
-    margin: auto;
-
+    width: 300px;
+    margin: 5% auto;
+  }
+  .form-group{
+    min-width: 200px;
   }
   .close-icon{
     width: 20px;
@@ -1376,10 +1385,39 @@ form div{
   flex-direction: column;
 }
 
+.show-details{
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 50%;
+  padding: 0px;
+  /* left: 50%; */
+  /* transform: translate(-50%, -50%); */
+  background: transparent;
+  background: #0A3465;
+  z-index: 9;
+  /* right: 0; */
+  overflow-y: scroll;
+  overflow-x: hidden;
+ }
+ .donation-tab{
+  display: inline;
+}
+
 /*----------------------------------About-----------------------------------------*/
 .container1{
-  background-image:url('Images/mobile-about.svg');
-  background-position:0vw;
+  min-height: 50px;
+}
+.about-pageimg{
+  background-image: url('Images/mobile-about.svg');
+  background-size: 100%;
+  margin-top:0px;
+  min-height: 40vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 1;
+  
 }
 .about-section {
   margin-left: 20px;
@@ -1387,6 +1425,7 @@ form div{
 }
 .about-section h1{
   font-size: 22px;
+  /* padding-top: 30px; */
   padding-bottom: 5px;
 }
 
@@ -1407,8 +1446,9 @@ form div{
 }
 .about-image1{
   height: 200px;
-  width: 80%;
+  width: 100%;
   margin: auto;
+  border-radius: 10px;
 }
 .our-aim h2{
   padding-top: 50px;
@@ -1495,21 +1535,6 @@ form div{
   align-items: center;
 }
 /*----------------------------------Courses------------------------------------*/ 
-.navbar-collapse{
-  overflow: visible;
-  position: absolute;
-  background-color: #04091e;
-  height: 100vh;
-  padding-left: 40px;
-  width: 350px;
-  top:0;
-  left:0;
-  text-align: left;
-  z-index: 1;
-  transition: 0.1s;
-  cursor: pointer;
-  padding-top: 25px;
-}
 .container-courses{
   overflow: visible;
 }
@@ -1606,6 +1631,14 @@ form div{
    .coding-courses{
     margin: 0px 20px 0px 20px;
    }
+   .login-container{
+    /* margin-top: 40px; */
+    width: 340px;
+    margin: 5% auto;
+  }
+  .form-group{
+    min-width: 240px;
+  }
   }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -1624,7 +1657,6 @@ form div{
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 992px) {
-
   .container{
     max-width: 100%;
     padding-right: 0px;
@@ -1703,6 +1735,42 @@ form div{
   margin-top: 50px;
  }
 
+ /*----------------------About-Page--------------------------------------*/
+ .col-about1{
+  flex-direction: column;
+ }
+ .our-aim h2{
+  text-align: center;
+ }
+ /*------------------Course page-----------------------*/
+ .course-page{
+  padding-top: 150px;
+  flex-direction: row-reverse;
+  padding: 0px;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 30px;
+ }
+ .course-page img{
+  padding-left: 10px;
+  border-radius: 15px;
+  width: 50%;
+ }
+ .bi-requirement img{
+  width: 50%;
+  padding-right: 10px;
+  border-radius: 15px;
+ }
+ .enroll{
+  width: 35%;
+  
+ }
+
+ /*--------------------blog-----------------------------*/
+ .blog-row{
+  margin-left: 40px;
+  margin-right: 40px;
+ }
  .blog-col img{
   width:200px;
   border-radius: 10px;
@@ -1710,6 +1778,15 @@ form div{
   position: relative;
   overflow: hidden;
   height: 50%;
+  margin: auto;
+}
+/*-------------------Contact--------------------------------*/
+.contact-general{
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.location-text{
+  padding-right: 20px;
 }
 } 
 
@@ -1800,7 +1877,7 @@ form div{
       margin-left: 40px;
       /* margin-right: 40px; */
     }
-    /*-------------------------------------------------------*/
+    /*----------------------------------------------------------------------------------------*/
     .featured-courses{
       margin: auto;
       padding-top: 100px;

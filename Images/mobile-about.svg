@@ -1,10 +1,10 @@
 <svg width="360" height="99" viewBox="0 0 360 99" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<rect width="360" height="99" fill="url(#pattern0)"/>
-<path d="M33.625 53.0836V64.7307H99.3315L106.75 53.0836H33.625Z" fill="#83C7F4" stroke="#85C8F5"/>
-<rect x="15.7954" y="49.5" width="25" height="16.335" fill="#76C2F4"/>
-<rect x="95.5" y="52.5012" width="40.3977" height="13.3941" fill="#2A88E8"/>
-<ellipse rx="7.14398" ry="14.8203" transform="matrix(0.837226 0.546857 -0.44981 0.893124 90.2968 64.4153)" fill="#54ABF0"/>
-<rect x="114.932" y="50.754" width="23.0114" height="16.3059" fill="#3492EC"/>
+<path d="M360 0H0V99H360V0Z" fill="url(#pattern0)"/>
+<path d="M34.8296 53.8113V65.4584H100.536L107.955 53.8113H34.8296Z" fill="#83C7F4" stroke="#85C8F5"/>
+<path d="M42 50.2278H17V66.5628H42V50.2278Z" fill="#76C2F4"/>
+<path d="M137.102 53.229H96.7046V66.6231H137.102V53.229Z" fill="#2A88E8"/>
+<path d="M84.8351 78.3795C88.1384 80.5371 93.8008 76.3601 97.4825 69.0498C101.164 61.7396 101.471 54.0644 98.1677 51.9067C94.8644 49.7491 89.202 53.9261 85.5203 61.2364C81.8386 68.5466 81.5318 76.2218 84.8351 78.3795Z" fill="#54ABF0"/>
+<path d="M139.148 51.4817H116.137V67.7876H139.148V51.4817Z" fill="#3492EC"/>
 <defs>
 <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
 <use xlink:href="#image0_0_1" transform="translate(-0.0227723) scale(0.000544554 0.0019802)"/>

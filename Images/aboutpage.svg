@@ -1,12 +1,10 @@
-<svg width="1441" height="4159" viewBox="0 0 1441 4159" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<path d="M1345.24 4158.6L765.259 4153.39L768.764 3763.4L1348.74 3768.61L1345.24 4158.6Z" fill="#189AB4"/>
-<path d="M758 3745.28C847.835 3698.44 1006.25 3756.39 1006.25 3756.39C1006.25 3756.39 1449.55 4074.32 1317.4 4159H758V3745.28Z" fill="#0A3465"/>
-<rect x="0.818237" width="1440" height="400" fill="url(#pattern0)"/>
-<path d="M135.318 214.48V261.539H398.144L427.818 214.48H135.318Z" fill="#83C7F4" stroke="#85C8F5"/>
-<rect x="64" y="200" width="100" height="66" fill="#76C2F4"/>
-<rect x="382.818" y="212.127" width="161.591" height="54.1177" fill="#2A88E8"/>
-<ellipse rx="28.6626" ry="59.7592" transform="matrix(0.834696 0.550711 -0.446211 0.894927 362.005 260.265)" fill="#54ABF0"/>
-<rect x="460.545" y="205.068" width="92.0455" height="65.8824" fill="#3492EC"/>
+<svg width="1440" height="400" viewBox="0 0 1440 400" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<path d="M1440 0H0V400H1440V0Z" fill="url(#pattern0)"/>
+<path d="M134.5 214.48V261.539H397.326L427 214.48H134.5Z" fill="#83C7F4" stroke="#85C8F5"/>
+<path d="M163.182 200H63.1818V266H163.182V200Z" fill="#76C2F4"/>
+<path d="M543.591 212.127H382V266.245H543.591V212.127Z" fill="#2A88E8"/>
+<path d="M334.522 313.745C347.735 322.463 370.385 305.586 385.111 276.05C399.838 246.513 401.065 215.503 387.852 206.785C374.639 198.067 351.989 214.944 337.262 244.48C322.535 274.016 321.308 305.027 334.522 313.745Z" fill="#54ABF0"/>
+<path d="M551.772 205.068H459.727V270.95H551.772V205.068Z" fill="#3492EC"/>
 <defs>
 <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
 <use xlink:href="#image0_0_1" transform="translate(-0.0280528) scale(0.000550055 0.0019802)"/>
