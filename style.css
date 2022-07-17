@@ -1169,7 +1169,7 @@ form div{
   }
   .heading p{
     font-size: 16px;
-    margin: 30px 20px 10px;
+    margin: 20px 20px 10px;
   }
  
   .container{
@@ -1187,6 +1187,9 @@ form div{
   } */
   .d-flex{
     margin-right: 10px;
+  }
+  .btn1{
+    margin-top: 20px;
   }
   /*-------------------------------------------------------------Why choose us----------------------------------------------*/
   .why-choose-us-text{
