@@ -42,7 +42,19 @@ body {
   .nav-link:hover{
     color:#fe6601;
   }
- 
+  .nav-item .nav-link::after{
+    content:'';
+    width: 0%;
+    height: 3px;
+    background: #fe6601;
+    margin: auto;
+    display:block;
+  transition: 0.5s;
+  }
+  .nav-item .nav-link:hover::after{
+    width: 100%;
+  } 
+
 .navbar-collapse{
   display: inline-block;
 }
