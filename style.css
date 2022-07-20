@@ -718,9 +718,9 @@ textarea{
   display: block;
 }
 .d-block{
-  margin-top: 100px;
+  margin-top: 50px;
   height: 100%;
-  margin: auto;
+  padding: 40px;
 }
 .w{
   width: 80%!important;
