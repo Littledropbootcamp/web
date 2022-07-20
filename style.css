@@ -329,7 +329,7 @@ main{
   padding-bottom: 30px;
 }
 
- /*--------------------------Get Early Access Sign-up-----------------------------------------------------------*/
+ /*--------------------------Get Early Access-----------------------------------------------------------*/
  .start-here{
   padding: 50px;
  box-sizing: border-box;
@@ -708,80 +708,6 @@ textarea{
   margin-top: 20px;
 }
 
-
-/*-----------------------------------------------blog----------------------------------------*/
-.container-2{
-  min-height: 60vh;
-  width: 100%;
-  background-image: url('Images/blog1.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  top: 0px;
-  left: 0px;
-  overflow: hidden;
-  padding-bottom: 50px;
-}
-.blog-row{
-  display: flex;
-  padding-top: 100px;
-  margin-left: 80px;
-  margin-right:80px;
-  justify-content: space-between;
-}
-.blog-col{
-  border-radius: 10px;
-  padding-bottom: 50px;
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-}
-.blog-col img{
-  width:400px;
-  border-radius: 10px;
-  margin-bottom: 30px;
-  position: relative;
-  overflow: hidden;
-  height: 80%;
-}
-.blog-col a{
-  text-decoration: none;
-  color:#1d5191;
-}
-.layer{
-  background: transparent;
-  height: 70%;
-  width:70%;
-  position: absolute;
-  top:0;
-  left:0;
-  transition: 0.5s;
-  border-radius: 10px;
-}
-.layer:hover{
-  background-color: #fff;
-  opacity: 0.9;
-}
-.layer:hover h1{
-opacity: 1;
-/* bottom: 49%; */
-}
-.layer h1{
-  /* width: 80%; */
-  color:#1d5191;
-  font-size: 25px;
-  bottom: 50px;
-  left: 0%;
-  transform: translateX(50%);
-  position: absolute;
-  opacity: 0;
-  transition: 1.5s;
-  font-weight: 700;
-}
-.blog-col p{
-  padding-bottom: 20px;
-  padding-right: 20px;
-}
 /*---------------------------------------------------------Courses Page coding courses------------------------------------------------------------*/
 .container-courses{
   top: 0;
