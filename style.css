@@ -718,9 +718,13 @@ textarea{
   display: block;
 }
 .d-block{
-  margin-top: 120px;
-  height: 500px;
-  /* overflow: hidden; */
+  margin-top: 100px;
+  height: 100%;
+  margin: auto;
+}
+.w{
+  width: 80%!important;
+
 }
 .coding-head h1, .noncoding-head h1{
   margin-top: 0px;
@@ -736,7 +740,7 @@ textarea{
   margin-left: 80px;
   margin-right: 80px;
 }
-.carousel-caption h5{
+/* .carousel-caption h5{
   font-weight: 700;
   font-size: 30px;
   overflow: hidden;
@@ -747,7 +751,7 @@ textarea{
   font-weight: 500;
   text-align: center;
   overflow: hidden;
-}
+} */
 .course-links {
   margin-bottom: 30px;
   padding-left: 80px;
@@ -756,13 +760,13 @@ textarea{
   padding: 5px;
   list-style: none;
 }
-.coding img,.non-coding img{
+/* .coding img,.non-coding img{
   width: 50%;
   height: 500px;
-  margin-left: 80px;
+  margin-left: 80px; */
   /*margin-right: 80px; */
   
-}
+/*}*/
 strong{
   font-size: 20px;
 }
