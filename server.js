@@ -1,3 +1,4 @@
+// Form manipulation
 var regBtn = document.querySelectorAll(".dropdown-item");
 var dropDiv = document.getElementsByClassName("hero");
 var login = document.getElementById('login');
@@ -22,7 +23,7 @@ myLogin()
 
 //Donation tab
 function showDiv(){
-  // document.getElementsByClassName("show-details").style.display = "block";  
+  // on click the donation details will be displayed
   document.getElementById("show-div").style.display = "block";
   
 }
@@ -36,27 +37,7 @@ document.getElementById("show-div").style.display ="none";
 
 hideDiv();
 
-//--------------------------Show courses---------------------
-function showCourse(){
-  document.getElementById("bi").style.display= "block";
-}
-showCourse();
-function showScience(){
-  document.getElementById("ds").style.display= "block";
-}
-showScience();
-function showAnalysis(){
-  document.getElementById("da").style.display= "block";
-}
-showAnalysis();
-function showWeb(){
-  document.getElementById("wd").style.display= "block";
-}
-showWeb();
-function showMobile(){
-  document.getElementById("md").style.display= "block";
-}
-showMobile();
+
 
 /*--------------------------------------------Search------------------------------------------------------*/
 const courses= [
@@ -151,6 +132,12 @@ function hide() {
 hide();
 
 
+// when users click log out button the close nav button doesn't display//
+// document.addEventListener("click", myFunc);
+// function myFunc(){
+//   console.log("clicked");
+//   document.getElementById("close-form").style.display = "none";
+// }
 
 // hide nav links---------------------------------------------
 // function close() {

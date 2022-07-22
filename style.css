@@ -5,7 +5,9 @@
   padding: 0px;
   margin: 0px;
 }
-
+p{
+  font-size: 16px;
+}
 body {
   font-size: 14px;
   font-family: 'Lato', sans-serif;
@@ -18,8 +20,6 @@ body {
   height: 100vh;
   max-width: 100%;
   background-color: #004aad;
-  /* background-color: #0A3465; */
-  /* background-color: #1d5191; */
   background-image: url('Images/LITTLEDROP.png');
   background-repeat: no-repeat;
   background-size: cover;
@@ -42,7 +42,7 @@ body {
   .nav-link:hover{
     color:#fe6601;
   }
-  .nav-item .nav-link::after{
+  /* .nav-item .nav-link::after{
     content:'';
     width: 0%;
     height: 3px;
@@ -53,7 +53,7 @@ body {
   }
   .nav-item .nav-link:hover::after{
     width: 100%;
-  } 
+  }  */
 
 .navbar-collapse{
   display: inline-block;
@@ -257,7 +257,7 @@ main{
   border-radius: 15px;
 }
 .course-col p{
-  font-size: 15px;
+  font-size: 16px;
   margin-bottom: 10px;
   padding: 40px;
   line-height: 2rem;
@@ -382,6 +382,9 @@ overflow: hidden;
 
 
 /*--------------------------------What Ex Mentees are saying Section-Testimonials----------------------------------------*/
+.carousel-inner{
+  padding: 30px;
+}
 .profile{
   display:flex;
   flex-direction: row-reverse;
@@ -392,6 +395,12 @@ overflow: hidden;
   width: 150px;
   border-radius: 50%;
   padding: 5px;
+}
+.shift img{
+  min-width: 100px;
+  min-height: 100px;
+  padding: 20px;
+  border-radius: 100px;
 }
 .profile h4{
   font-size: 22px;
@@ -405,22 +414,21 @@ overflow: hidden;
   margin-left: 20px;
   font-weight: 700;
 }
-.carousel{
+.slide{
+  height: 100%;
   width: 100%;
   padding-top: 0px;
   padding-bottom: 100px;
   margin: auto;
   text-align: center;
 }
-.carousel h2{
+.slide h2{
   margin-bottom: 40px;
   font-weight: 700;
 }
 
 .shift{
   box-sizing: border-box;
-  /* background: #1d5191; #D4F1F4*/
-  /* background: #c8e0e9; */
   background: #f7f7f4;
   border-radius: 10px;
   box-shadow: 5px 5px 5px rgba(0,0,0,0.25);
@@ -428,8 +436,7 @@ overflow: hidden;
   overflow: hidden;
   height: 100%;
   /* transform: translateY(-50% -50%); */
-  padding: 100px;
- 
+  padding: 120px;
 }
 .slide-col{
   display: flex;
@@ -444,10 +451,7 @@ overflow: hidden;
   font-weight: 600;
   font-size: 18px;
 }
-.carousel{
-  width: 100%;
-  height: 100%;  
-}
+
  /*-----------------------------------End----------------------------------------------*/
  
  
@@ -464,7 +468,7 @@ overflow: hidden;
    width: 100%;
    text-align: center;
    padding-bottom: 10px;
-   /* margin-top: 200px; */
+   /* margin-top: 400px; */
 
  }
  .footer-logo{
@@ -730,17 +734,18 @@ textarea{
 .coding{
   display: block;
 }
-.d-block{
-  margin-top: 50px;
+.slider-img{
+  width: 100%;
+  margin: auto;
+  margin-top: 100px;
   height: 100%;
-  padding: 40px;
+  margin-bottom: 50px;
 }
-.w{
-  width: 80%!important;
-
-}
+/* #ExampleCaptions{
+  padding-top: 200px;
+} */
 .coding-head h1, .noncoding-head h1{
-  margin-top: 0px;
+  margin-top: 50px;
   font-size: 30px;
   text-align: center;
   font-weight: 700;
@@ -769,9 +774,10 @@ textarea{
   margin-bottom: 30px;
   padding-left: 80px;
 }
-.course-links li{
+.course-links li a{
   padding: 5px;
   list-style: none;
+  text-decoration: none;
 }
 /* .coding img,.non-coding img{
   width: 50%;
@@ -784,7 +790,6 @@ strong{
   font-size: 20px;
 }
 .coding p, .non-coding p{
-  font-size: 15px;
   padding: 15px 0px;
   margin-left: 80px;
   margin-right: 80px;
@@ -873,6 +878,78 @@ strong{
 .course-home{
   padding-left: 80px;
   color:#fe6601;
+}
+/*-----------------------------------------------blog----------------------------------------*/
+.container-2{
+  min-height: 60vh;
+  width: 100%;
+  background-image: url('Images/blog1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+  padding-bottom: 50px;
+}
+.blog-row{
+  display: flex;
+  padding-top: 100px;
+  margin-left: 80px;
+  margin-right:80px;
+  justify-content: center;
+}
+.blog-col{
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+}
+.blog-col img{
+  width:90%;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+  height: 80%;
+}
+.blog-col a{
+  text-decoration: none;
+}
+.layer{
+  background: transparent;
+  height: 50%;
+  width:60%;
+  position: absolute;
+  top:0;
+  left:0;
+  transition: 0.5s;
+  border-radius: 10px;
+}
+.layer:hover{
+  background-color: #fff;
+  opacity: 0.9;
+}
+.layer:hover h1{
+opacity: 1;
+/* bottom: 49%; */
+}
+.layer h1{
+  width: 80%;
+  color:#1d5191;
+  font-size: 25px;
+  bottom: 100;
+  left: 0%;
+  transform: translateX(50%);
+  position: absolute;
+  opacity: 0;
+  transition: 1.5s;
+  font-weight: 700;
+}
+.blog-col p{
+  width: 90%;
+  padding-bottom: 20px;
 }
 /*-------------------------------------------------------------------*/
 form div{
@@ -1004,23 +1081,18 @@ form div{
 .register{
   margin: 0px auto; 
 }
-.carousel-inner{
+/* .carousel-inner{
   width: 100%;  
-}
-.shift img{
-  min-width: 100px;
-  min-height: 100px;
-  padding: 20px;
-  border-radius: 100px;
-}
-.slide-col{
+} */
+
+/*.slide-col{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 .slide-col h4, p{
   text-align: left;
-}
+} */
 
 
 /*-----------------------------------Media query Mobile----------------------------------*/
@@ -1028,6 +1100,18 @@ form div{
   body{
     max-width: 600px;
   }
+   /*----------------------------Navbar toogle button-----------------------------------*/
+ .navbar-toggler-icon{
+  background: none;
+  color: #fff;
+ }
+ .navbar-toggler{
+  box-shadow: none;
+ } 
+ 
+ .navbar-toggler:hover, .active{
+   border: none;
+ }
   .account{
     display: block;
   }
@@ -1188,23 +1272,19 @@ form div{
     font-size: 22px;
     font-weight: 700;
    }
-   .course-category p{
-    padding: 10px;
-    text-align: left;
-    width: 100%;
-    margin: auto;
-    margin-top: 20px;
-   }
    .course-row{
     margin: 20px;
    }
    .course-row img{
     width: 100%;
     height: 250px;
-    padding: 20px;
+    padding: 10px;
+    /* border-radius: 15px; */
   }
    .course-col p{
-    padding: 20px;
+    padding: 10px;
+    font-size: 15px;
+    margin: 0px;
    }
   .course-row{
     flex-direction: column;
@@ -1232,18 +1312,7 @@ form div{
  .learn {
   padding:10px 20px;
  }
- /*----------------------------Navbar toogle button-----------------------------------*/
- .navbar-toggler-icon{
-  background: none;
-  color: #fff;
- }
- .navbar-toggler{
-  box-shadow: none;
- } 
- 
- .navbar-toggler:hover, .active{
-   border: none;
- }
+
  
 
 /*------------------Get early Access Section--------------------*/
@@ -1278,46 +1347,50 @@ form div{
 
 
  /*-------------------------------------------------What Mentees are saying--------------------------------------------*/
- 
+ .slide{
+  padding-bottom: 0px;
+ }
  .shift{
   min-height: 400px;
   width: 100%;
   padding: 18px;
   overflow: hidden;
+  border-radius: 15px;
+  
  }
- .profile img{
+ .mentee-avatar{
   max-width: 100px;
   max-height: 50px;
   border-radius: 50%;
   padding: 20px;
 }
- /* .shift img{
-  width: 70%;
-    mneight: 0px;
-    padding: 20px;
-    border-radius: 100px
- } */
- .carousel h2{
+ .carousel-inner{
+  padding: 0px;
+ }
+ .slide h2{
   font-size: 22px;
   font-weight: 700;
  }
 
- .carousel{
-  padding: 50px 20px 50px 20px;
-  width: 100%;
-  height: 100%;
-  /* padding-left:  20px;
-  padding-right: 20px; */
-}
 .slide-col p{
   font-size: 14px;
 }
 .profile h4{
   font-size: 18px;
 }
+.slide{
+  padding: 50px 20px 50px 20px;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  position: relative;
+  /* padding-left:  20px;
+  padding-right: 20px; */
+}
   
   /*-------------------------Footer-------------------------------------------*/
 #footer{
+  margin-top: 50px;
   height: 100%;
 }
 /* .footer img{
@@ -1349,7 +1422,14 @@ form div{
  .donation-tab{
   display: inline;
 }
-
+.footer-logo{
+  margin-left: 20px;
+}
+.social-media-icons img{
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+}
 /*-----------------------------------------------------About----------------------------------------------------------*/
 .container1{
   min-height: 50px;
@@ -1413,45 +1493,61 @@ form div{
 .about-section{
   margin-bottom: 50px;
 }
-
-/*-------------------------Contact Page-------------------------------------------------------------------------------*/
-.container-3{
-  background-image:url('Images/mobile-contact.jpg');
+/*--------------------------------Blog-------------------------------------------------------------*/
+.container-2{
+  background-image:url('Images/blog.jpg');
+  background-size: cover;
 }
-.contact-section h1{
-  font-size: 22px;
-}
-.contact-general{
+.blog-row{
   flex-direction: column;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin: auto;
 }
-.contact-general h2{
-  font-size: 22px;
+.blog-col p{
+  padding-bottom:20px;
+  font-size: 14px;
+  font-weight: 500;
+  }
+.blog-col{
+  padding: 20px;
+  margin: 0px;
 }
-.contact-section p{
-  margin: 0px 0px;
-  text-align: center;
-  padding-top: 0px;
+.blog-col img{
+  width: 100%;
+  height: 60%;
+  align-items: center;
 }
-.contact-section p{
-  margin: 0px 20px 16px;
+.container-2{
+  width: 100%;
+  align-items: center;
+  margin-left: 0px;
+  margin-right: 0px;
 }
-.enquiry{
-  padding-left: 40px;
-  padding-right: 20px;
+.layer h1{
+  width: 100%;
+  font-size: 18px;
+  text-align: left;
+  margin-top: 30px;
 }
-
-
+.layer{
+  width: 100%;
+  height: 50%;
+  align-items: center;
+}
 /*----------------------------------Courses------------------------------------*/ 
 .container-courses{
   overflow: visible;
 }
-.carousel-item img{
+.course-links {
+  padding-left: 40px;
+}
+.code{
+  padding-bottom: 0px;
+}
+.slider-img{
   width: 100%;
   min-height: 100%;
   padding: 0px;
-  padding-top: 60px;
+  padding-top: 110px;
   margin-top: 0px;
 }
 
@@ -1517,6 +1613,34 @@ form div{
   border-left: 0px;
   border-bottom: 1px;
 }
+/*-------------------------Contact Page-------------------------------------------------------------------------------*/
+.container-3{
+  background-image:url('Images/mobile-contact.jpg');
+}
+.contact-section h1{
+  font-size: 22px;
+}
+.contact-general{
+  flex-direction: column;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.contact-general h2{
+  font-size: 22px;
+}
+.contact-section p{
+  margin: 0px 0px;
+  text-align: center;
+  padding-top: 0px;
+}
+.contact-section p{
+  margin: 0px 20px 16px;
+}
+.enquiry{
+  padding-left: 40px;
+  padding-right: 20px;
+}
+
 
 }
 @media (min-width: 360px) and (max-width: 600px){
@@ -1682,6 +1806,11 @@ form div{
  .enroll{
   width: 35%;
   
+ }
+ /*----------------------------form-------------------------------------*/
+ .close-icon{
+  margin-top: 100px;
+  margin-left: 150px;
  }
 
  
