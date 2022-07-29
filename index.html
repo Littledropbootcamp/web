@@ -69,7 +69,7 @@
   <div class="heading">
     <h1>LITTLEDROP <span class="header">EDUCATION BOOTCAMP</span></h1>
     <p class="text">An online-based not-for-profit charity organization, bridging the gap between computer illiteracy and unemployemt among youths and women with e-courses to develop coding and non-coding skills.</p>
-    <a href="./form.html"><button class="btn1" type="submit" onclick="myFunction()">Start Here!</button></a>
+    <a href="./course.html"><button class="btn1" type="submit" onclick="myFunction()">View Courses</button></a>
   </div>
 </div>
 
@@ -134,7 +134,17 @@
 <section class="start-here">
   <h4 class="start-here-head">Get early access today</h4>
   <p class="start-here-text">It only takes a minute to sign up and our free courses are quite easy to learn. if you have any questions, our support team would be happy to help you. It's time to learn and collaborate with other mentees. Select your course choice and let the journey begin</p>
-  <a href="./form.html"><button class="btn1 Sign-up" onclick="myFunction()">Start Here!</button></a>
+  <form id="sign-up">
+    <label for="name" id="name" name="name">Name:</label>
+  <input type="text" class="input-box" placeholder="Adeoti Olufemi" required>
+  <br>
+  <label for="email" id="email" name="email">Email:</label>
+  <input type="text" class="input-box" placeholder="hello@example.com" required>
+  <br>
+  <label for="password" id="password" name="password">Password:</label>
+  <input type="password" class="input-box" placeholder="Password" required>
+  <button class="btn1 Sign-up" onclick="myFunction()">Sign-up</button>
+</form>
 </section>
 
 <!----------------------------------------------------------------Testimonials------------------------------------>
