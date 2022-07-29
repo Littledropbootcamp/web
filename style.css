@@ -734,7 +734,19 @@ textarea{
   margin-top: 20px;
 }
 
-/*---------------------------------------------------------Courses Page coding courses------------------------------------------------------------*/
+/*---------------------------------------------------------Courses Page------------------------------------------------------------*/
+.courses{
+  z-index: 9;
+  top: 0px;
+  padding-bottom: 150px;
+}
+#courses{
+  margin-top: 0px;
+}
+.coding1 h1{
+  margin-top: 0px;
+}
+/*-----------------------------------------------------coding courses------------------------------------------------------------*/
 .container-courses{
   top: 0;
   margin-bottom: 0px;
@@ -784,10 +796,11 @@ textarea{
   padding-left: 80px;
 }
 .course-links li a{
-  padding: 5px;
+  margin-bottom: 10px;
   list-style: none;
   text-decoration: none;
 }
+
 /* .coding img,.non-coding img{
   width: 50%;
   height: 500px;
