@@ -370,7 +370,7 @@ overflow: hidden;
    padding-top: 20px;
    padding-bottom: 10px;
    font-weight: 500;
-   font-size: 15px;
+   font-size: 16px;
    font-weight: 500;
    line-height: 2rem;
  }
@@ -1674,6 +1674,9 @@ form div{
   padding: 0px;
   margin-top: 100px;
  }
+ #bi,#wd,#ds,#es, #sm{
+  padding-top: 150px;
+ }
  .course-page{
   padding-top: 150px;
   flex-direction: row-reverse;
@@ -1694,7 +1697,9 @@ form div{
  }
  .enroll{
   width: 35%;
-  
+ }
+ .slider-img{
+  height: 100%;
  }
  /*----------------------------form-------------------------------------*/
  .close-icon{
