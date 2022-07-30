@@ -376,13 +376,14 @@ overflow: hidden;
  }
  #sign-up{
   padding-left: 60px;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
  }
  .input-box{
   width: 30%;
   margin: auto;
   margin: 10px;
-  padding: 5px;
+  padding: 6px;
+  border-radius: 15px;
  }
 .Sign-up {
   margin-top: 20px;
