@@ -1,24 +1,5 @@
-// Form manipulation
-// var regBtn = document.querySelectorAll(".dropdown-item");
-// var dropDiv = document.getElementsByClassName("hero");
-// var login = document.getElementById('login');
-// var register = document.getElementById('register')
-// var button = document.getElementById('btn');
-// console.log(login, register, button);
-
-// function myRegister(){
-//   login.style.left ="-400px";
-//   register.style.left ="50px";
-//   button.style.left ="110px";
-// }
-
-// function myLogin(){
-//   login.style.left ="50px";
-//   register.style.left ="450px";
-//   button.style.left ="0px";
-// }
-// myRegister()
-// myLogin()
+//-------------------------Enroll now==============================
+document.getElementById("action-btn").addEventListener("click", function(){alert("Registration closed");});
 
 
 //Donation tab===========================================================================
@@ -37,17 +18,7 @@ document.getElementById("show-div").style.display ="none";
 
 hideDiv();
 
-//-------------------------Enroll now===============================
-//document.addEventListener("click", display)
-//document.getElementById("display-info").addEventListener("click", function(){alert("Hello World!");});
-//document.getElementById("display-info").addEventListener("click", myFunction);
 
-function myFunction() {
-  //alert ("Hello World!");
-  console.log('click')
-}
-
-myFunction()
 
 // function myFunction() {
 //   document.getElementById("display-info").innerHTML = ();
