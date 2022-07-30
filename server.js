@@ -39,7 +39,15 @@ hideDiv();
 
 //-------------------------Enroll now===============================
 //document.addEventListener("click", display)
-document.getElementById("action-btn").addEventListener("click", function(){alert("Hello World!");});
+//document.getElementById("display-info").addEventListener("click", function(){alert("Hello World!");});
+//document.getElementById("display-info").addEventListener("click", myFunction);
+
+function myFunction() {
+  //alert ("Hello World!");
+  console.log('click')
+}
+
+myFunction()
 
 // function myFunction() {
 //   document.getElementById("display-info").innerHTML = ();
