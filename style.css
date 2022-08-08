@@ -767,7 +767,7 @@ textarea{
   padding-top: 200px;
 } */
 .coding-head h1, .noncoding-head h1{
-  margin-top: 50px;
+  margin-top: 0px;
   font-size: 30px;
   text-align: center;
   font-weight: 700;
@@ -823,6 +823,7 @@ strong{
 }
 .enroll{
   margin-left: 0px;
+  margin-bottom: 10px;
   width: 20%;
   padding: 15px;
   font-size: 14px;
@@ -991,9 +992,9 @@ form div{
 
 
 /*-----------------------------------Media query Mobile----------------------------------*/
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
   body{
-    max-width: 600px;
+    max-width: 767px;
   }
    /*----------------------------Navbar toogle button-----------------------------------*/
  .navbar-toggler-icon{
@@ -1562,7 +1563,8 @@ form div{
   }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media screen, (min-width: 600px) and (max-width: 767px) {
+/* i removed screen*/
+@media (min-width: 600px) and (max-width: 767px) {
   .footer img{
     height: 100px;
     margin-left: 0px;
@@ -1570,13 +1572,67 @@ form div{
   .footer-text{
     margin-left: 0px;
   }
+  /*---------------------------------------------------------- course pages---------------------------------*/  
+.enroll{
+  width:40%; 
+}
+#bi,#wd,#ds,#es, #sm{
+  padding-top: 50px;
+  background-color: #eff0f3;
+  
+}
+.learn-bi h6{
+  padding-top: 20px;
+  padding-left: 0px;
+}
+.course-page{
+  margin: 0px 20px;
+}
+
+.course-page img{
+  width: 100%;
+  margin: auto;
+  padding-top: 30px;
+  padding-right: 0px;
+  padding-bottom: 30px;
+}
+.bi-requirement img{
+  width: 100%;
+  margin: auto;
+  padding-right: 0px;
+  padding-bottom: 30px;
+}
+.coding p{
+  margin: 30px;
+}
+.course-page{
+  flex-direction: column-reverse;
+  justify-content: flex-start;
+}
+
+.learn-bi{
+  flex-direction: column;
+}
+.bi-requirement{
+  flex-direction: column;
+}
+.bi-requirement div{
+  padding: 20px;
+}
+.learn-bi span{
+  border: 2px solid #fff;
+  border-right: 0px;
+  border-left: 0px;
+  border-bottom: 1px;
+}
   /* .testimonials{
     display: none;
    } */
+
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 768px) and (max-width: 991px) {
   .container{
     max-width: 100%;
     padding-right: 0px;
@@ -1711,9 +1767,10 @@ form div{
 } 
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media screen and (min-width: 1200px) {
+/* @media screen and (min-width: 1200px) { */
+  @media (min-width: 991px) and (max-width: 1200px) {
   body {
-    min-width: 1200px;
+    min-width: 991px;
     } 
     main{
       color:#1d5191;
@@ -1846,8 +1903,11 @@ form div{
     }
     /*---------------button-----------------------*/
     .learn{
-      width: 50%;
+      /* width: 50%; */
       align-items: center;
+    }
+    .enroll{
+      width: 35%;
     }
 
  .course-row{
